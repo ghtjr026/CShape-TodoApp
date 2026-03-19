@@ -1,0 +1,25 @@
+## .NET Framework
+bin/
+obj/
+[Dd]ebug/
+[Rr]elease/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+## Visual Studio
+.vs/
+*.rsuser
+*.csproj.user
+
+## Build Results
+[Bb]uild[Ll]og.*
+*.log
+
+## NuGet
+packages/
+*.nupkg
+
+## Data files
+todos.json
