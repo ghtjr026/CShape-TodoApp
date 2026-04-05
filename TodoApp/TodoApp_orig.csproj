@@ -78,7 +78,6 @@
     <Compile Include="Domain\Enums\TodoPriority.cs" />
     <Compile Include="Domain\Enums\TodoStatus.cs" />
     <Compile Include="Infrastructure\Persistence\JsonTodoRepository.cs" />
-    <Compile Include="Infrastructure\Api\ApiTodoRepository.cs" />
     <Compile Include="Presentation\Commands\RelayCommand.cs" />
     <Compile Include="Presentation\ViewModel\TodoItemViewModel.cs" />
     <Compile Include="Presentation\ViewModel\TodoEditorViewModel.cs" />

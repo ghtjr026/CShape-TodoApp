@@ -1,5 +1,6 @@
 ﻿using System.Windows;
 using TodoApp.AppCore.UseCases;
+using TodoApp.Infrastructure.Api;
 using TodoApp.Infrastructure.Persistence;
 using TodoApp.Presentation.ViewModel;
 
@@ -11,10 +12,13 @@ namespace TodoApp
     /// </summary>
     public partial class App : Application
     {
+        // TodoServer 주소 (서버 실행 후 포트 확인)
+        private const string ServerUrl = "http://localhost:5000";
+
         private void Application_Startup(object sender, StartupEventArgs e)
         {
-            // Infrastructure
-            var repository = new JsonTodoRepository();
+            // Infrastructure: API 서버 연결 (DB 저장)
+            var repository = new ApiTodoRepository(ServerUrl);
 
             // UseCases
             var createUseCase = new CreateTodoUseCase(repository);
